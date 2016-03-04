@@ -211,7 +211,7 @@
     $("#companytable").ready(function(){
         $("#companytable").DataTable(
             {
-                "lengthMenu": [[2, 5, 8], [2, 5, 8]]
+                "lengthMenu": [[5, 10, 20], [5, 10, 20]]
             });
     });
 
@@ -219,7 +219,7 @@
     $("#existingComponentTable").ready(function(){
         $("#existingComponentTable").DataTable(
             {
-                "lengthMenu": [[2, 5, 8], [2, 5, 8]]
+                "lengthMenu": [[5, 10, 20], [5, 10, 20]]
             });
     });
 
@@ -228,6 +228,6 @@
     $("#RegisteredAdminTable").ready(function() {
         $("#RegisteredAdminTable").DataTable(
             {
-                "lengthMenu": [[2, 5, 8], [2, 5, 8]]
+                "lengthMenu": [[5, 10, 20], [5, 10, 20]]
             });
     });

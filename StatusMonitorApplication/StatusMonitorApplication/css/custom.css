@@ -1,0 +1,68 @@
+/*Styles for Master Page*/ 
+   .masterPageHeaderDiv
+    {
+    border:2px solid rgb(0,191,255);
+    }
+    .masterPageMiddleBodyTable
+    {
+    border-bottom:2px solid rgb(0,191,255);
+    }
+    .masterPageTabButton
+    {
+    background:#E0FFFF;
+    height:115px;
+    width:80px;
+    }
+
+    .masterPageFooterTable 
+    {
+    width:100%;    
+    margin-left:auto;   
+    }
+
+    .masterPageFooterTable th, td {
+        padding: 2px;
+        text-align: center;
+    }
+
+
+/*Styles for ActivatePage*/
+    #ActivatePageStyle{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 100px;
+        height: 100px;
+    }
+
+
+/*general style scheme*/
+table{
+        width:100%;    
+        margin-left:auto;
+        text-align:center;
+    }
+
+table th, td {
+        padding: 2px;
+        text-align: center;
+    }
+.PageHeadings {
+        text-align:center;
+        color:rgb(0, 148, 255);
+        font-size:xx-large;
+        
+}
+table thead {
+        color:#900000;
+}
+table tbody {
+        font-weight:bolder;
+}
+table > thead > tr > td {
+        font-size:larger;
+        font-weight:bolder;
+}
+

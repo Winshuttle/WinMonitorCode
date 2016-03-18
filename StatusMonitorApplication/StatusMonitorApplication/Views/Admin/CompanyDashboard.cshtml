@@ -1,0 +1,106 @@
+﻿<div class="PageHeadings">Company Account</div>
+<br><br><br><br>
+<div class="table-responsive">
+<table class=" table table-striped table-hover CompanyDashboardTable" id="companytable">                                                                 <!-- Company Table-->
+    
+    <thead>
+        <tr>
+            <td>
+                Company No
+            </td>
+            <td>
+                Company Name
+            </td>
+            <td>
+                Company URL
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</div>
+<br /><br />
+
+
+
+<div class="row">
+    <div class="col-sm-4" style="padding-left:10px;">
+        <button class = "btn btn-link btn-lg" style="padding-left:10px;" id="btnmodal" onclick="addAccountCompanyDashboard()"> 
+            Add Account
+        </button>
+
+    </div>
+    <div class="col-sm-4">
+        <button type="button" class="btn btn-primary btn-lg text-center" >
+             Select
+        </button>
+    </div>
+    
+    <div class="col-sm-4">
+    </div>
+</div>
+
+
+<!--to add custom.js functions after body load-->
+<script src="~/Scripts/custom.js"></script>
+
+
+<!--modal-->
+   <div class = "modal fade" id = "addCompanyAccountModal" tabindex = "-1" role = "dialog" aria-labelledby = "addCompanyAccountModalLabel" aria-hidden = "true" >
+                <div class = "modal-dialog">
+                    <div class = "modal-content">
+                        
+                        <!--dialog box header-->
+                        <div class = "modal-header">
+                            
+                             <!--dialog box close button-->
+                            <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                                &times;
+                            </button>
+            
+                            <!--dialog box label--> 
+                            <h4 class = "modal-title" id = "addCompanyAccountModalLabel" style="color:#900000">
+                                 <b>Add New Company Account</b>
+                             </h4>
+                     </div>
+         
+                <!--dialog box body-->
+                <div class = "modal-body">
+                     <form>
+                         <div class="row">
+                            <div class="col-sm-4" style="text-align:left; color:#900000">
+                                <span>Enter Company Name</span>
+                            </div>  
+                             <div class="col-sm-8" style="text-align:left; color:#900000">
+                                <input type="text" id="CompanyName"/>
+                            </div>
+                        </div>
+                         <br />
+                         <div class="row">
+                             <div class="col-sm-4" style="text-align:left; color:#900000">
+                                 <span>Enter Company URL</span>
+                             </div>
+                             <div class="col-sm-8" style="text-align:left; color:#900000">
+                                 <input type="url"  id="CompanyURL"/>
+                             </div>
+                         </div>    
+                     </form>
+                 </div>
+         
+                <!--dialog box footer-->
+                <div class = "modal-footer">
+                    <!--dialog box add component button-->
+                        <button type = "button" class = "btn btn-primary" id="btnaddCompany">
+                           Add
+                        </button>
+
+                        <!--dialog box Close Button-->
+                        <button type = "button" class = "btn btn-default" data-dismiss = "modal">
+                           Close
+                        </button>
+                </div>
+            </div>                                                
+        </div>                                               
+    </div>                                                      
+            

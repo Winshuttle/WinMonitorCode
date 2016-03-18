@@ -1,0 +1,255 @@
+﻿@using WinMonitorApp
+<div id="componentPageBody">
+    <div id="headingComponent">
+        <span class="PageHeadings">Component And Status</span>
+    </div>
+    <br><br><br><br>
+    <div id="contentComponent">
+        <!--table of existing components-->
+        <table class="table table-striped table-hover" id="existingComponentTable">
+            <thead>
+                <tr>
+                    <td class="checkboxColumnComponentPage">
+                        <input type="checkbox" id="componentCheckBox" onclick="checkUnCheck(this)">
+                    </td>
+                    <td>
+                        Component Id
+                    </td>
+                    <td>
+                        Component Name
+                    </td>
+                    <td>
+                        Component Type
+                    </td>
+                    <td>
+                        Company Name
+                    </td>
+                    <td>
+                        Incident Name
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+                
+        <br /><br />
+
+
+        <!--table to add component and status dropdown-->
+        <table class="table">  
+            <tr>
+                <td style="margin:auto auto;">
+                    <!--div to add new component-->
+                    <div id="addComponentDiv">
+                    
+                        <!--combobox of type selection of to be added component-->
+                        <div class="dropdown">
+                            <span style="color:rgb(0, 148, 255)">Add:</span>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="addComponentMenu" data-toggle="dropdown">Add Component
+                            <span class="caret"></span></button>
+                
+                            <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="addComponentMenu" style="right: 200px; left: auto;">
+                    
+                                <!--adding master component option-->
+                                <li role="presentation"><a role="menuitem" tabindex="-1" id="liMasterComponent" onclick="openAddMasterComponentModalFuntion()">Master Component</a></li>
+                   
+                                <!--adding specific component option-->
+                                <li role="presentation"><a role="menuitem" tabindex="-1" id="liSpecificComponent"onclick="openAddSpecificComponentModalFuntion()">Specific Component</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+                <td style="margin:auto auto;">
+                    <!--div to select status-->
+                    <div id="componentStatusDiv">
+                        <div class="dropdown">
+                            <span style="color:rgb(0, 148, 255)">Status:</span>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="statusMenu" data-toggle="dropdown">UpdateStatus
+                            <span class="caret"></span></button>
+                
+                            <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="statusMenu" style="right: 200px; left: auto;">
+                    
+                                <!--adding operational option-->
+                                <li role="presentation" ><a role="menuitem" tabindex="-1" id="liOperationalStatus">Operational</a></li>
+                   
+                                <!--adding minor outage option-->
+                                <li role="presentation" ><a role="menuitem" tabindex="-1" id="liMinorOutageStatus" onclick="openCreateIncidentModalFunction()">Minor Outage</a></li>
+
+                                <!--adding major outage option-->
+                                <li role="presentation"><a role="menuitem" tabindex="-1" id="liMajorOutageStatus" onclick="openCreateIncidentModalFunction()">Major Outage</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>                            <!--table of component and status dropdown ended-->
+
+        <div>
+            <button type="button" class="btn btn-primary text center">Save</button>
+        </div>
+    </div>
+
+
+<!--to add custom.js functions after body load-->
+<script src="~/Scripts/custom.js"></script>
+
+
+        <!--Modals-->
+            <!--Add Master Component Modal -->
+            <div class = "modal fade" id = "AddMasterComponentModal" tabindex = "-1" role = "dialog" aria-labelledby = "AddMasterComponentModalLabel" aria-hidden = "true">
+               <div class = "modal-dialog">
+                  <div class = "modal-content">
+                  
+                      <!--dialog box header-->
+                     <div class = "modal-header">
+
+                         <!--dialog box close button-->
+                         <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                              &times;
+                        </button>
+
+                         <!--dialog box label-->
+                        <h4 class = "modal-title" id = "AddMasterComponentModalLabel" style="color:#900000">
+                           <b>Add Master Component</b>
+                        </h4>
+                     </div>
+                 
+                      <!--dialog box body-->
+                     <div class = "modal-body">
+                        <table class="table" id="addMasterComponentModalTable" style="text-align:center; color:#900000">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="selectAllMasterComponentCheckBox"/>
+                                    </td>
+                                    <td>
+                                        Component Name
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody id="addMasterComponentModalTableBody">
+                            </tbody>
+                        </table>
+                     </div>
+         
+                      <!--dialog box footer-->
+                     <div class = "modal-footer">
+
+                        <!--dialog box add component button-->
+                        <button type = "button" class = "btn btn-primary">
+                           Add Component
+                        </button>
+
+                        <!--dialog box Close Button-->
+                        <button type = "button" class = "btn btn-default" data-dismiss = "modal">
+                           Close
+                        </button>
+
+                     </div>                                             <!--dialog box footer div closed-->
+         
+                  </div>                                                <!--dialog box content div closed--> 
+                                                              
+               </div>                                                   <!--dialog box modal div closed-->                                                  
+  
+            </div>                                                      <!--add master component modal div closed-->  
+
+            <!--Add Specific Component adding Modal -->
+            <div class = "modal fade" id = "AddSpecificComponentModal" tabindex = "-1" role = "dialog" aria-labelledby = "AddSpecificComponentModalLabel" aria-hidden = "true">
+               <div class = "modal-dialog">
+                  <div class = "modal-content">
+                  
+                      <!--dialog box header-->
+                     <div class = "modal-header">
+
+                         <!--dialog box close button-->
+                         <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                              &times;
+                        </button>
+
+                         <!--dialog box label-->
+                        <h4 class = "modal-title" id = "AddSpecificComponentModalLabel" style="color:#900000">
+                           <b>Add Specific Component</b>
+                        </h4>
+                     </div>
+                 
+                      <!--dialog box body-->
+                     <div class = "modal-body">
+                        <form id="addSpecificComponentForm" style="color:#900000">
+                            <label style="width:30%">Component Id:</label><input type="text" id="formComponentId"/><br><br>
+                            <label style="width:30%">Component Name:</label><input type="text" id="formComponentName"/>
+                        </form>
+                     </div>
+         
+                      <!--dialog box footer-->
+                     <div class = "modal-footer">
+
+                        <!--dialog box add component button-->
+                        <button type = "button" class = "btn btn-primary" id="btnaddSpecificComponent">
+                           Add Component
+                        </button>
+
+                        <!--dialog box Close Button-->
+                        <button type = "button" class = "btn btn-default" data-dismiss = "modal">
+                           Close
+                        </button>
+
+                     </div>                                             <!--dialog box footer div closed-->
+         
+                  </div>                                                <!--dialog box content div closed--> 
+                                                              
+               </div>                                                   <!--dialog box modal div closed-->                                                  
+  
+            </div>  
+                                                                <!--add specific component modal div closed-->
+            <!--Incident Raising Modal-->
+            <div class = "modal fade" id = "raiseIncidentModal" tabindex = "-1" role = "dialog" aria-labelledby = "raiseIncidentModalLabel" aria-hidden = "true">
+               <div class = "modal-dialog">
+                  <div class = "modal-content">
+                  
+                      <!--dialog box header-->
+                     <div class = "modal-header">
+
+                         <!--dialog box close button-->
+                         <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                              &times;
+                        </button>
+
+                         <!--dialog box label-->
+                        <h4 class = "modal-title" id = "raiseIncidentModalLabel" style="color:#900000">
+                           <b>Create Incident</b>
+                        </h4>
+                     </div>
+                 
+                      <!--dialog box body-->
+                     <div class = "modal-body">
+                            <form style="color:#900000">
+                                <label style="width:30%">Incident Name</label>
+                                <input type="text" id="formIncidentName"/><br><br>
+                                <label style="width:30%">Incident Details</label>
+                                <input type="text" id="formIncidentDetails" multiple="multiple" rows="6" cols="20"/>
+                            </form>
+                     </div>
+         
+                      <!--dialog box footer-->
+                     <div class = "modal-footer">
+
+                        <!--dialog box add component button-->
+                        <button type = "button" class = "btn btn-primary" id="btnaddIncident">
+                           Add Incident
+                        </button>
+
+                        <!--dialog box Close Button-->
+                        <button type = "button" class = "btn btn-default" data-dismiss = "modal">
+                           Close
+                        </button>
+
+                     </div>                                             <!--dialog box footer div closed-->
+         
+                  </div>                                                <!--dialog box content div closed--> 
+                                                              
+               </div>                                                   <!--dialog box modal div closed-->                                                  
+  
+            </div>                                                      <!--add master component modal div closed-->  
+
+        </div>

@@ -1,32 +1,32 @@
 //master page tab panel button click page loads
     //pageload function when dashboard tab clicked
     function masterPageDashBoardClicked() {
-            $("#masterPageContentPlace").load("Admin/CompanyDashboard");
+            $("#masterPageContentPlace").load("CompanyDashboard");
         }
 
     //pageload function when component tab clicked
     function masterPageComponentClicked() {
-            $("#masterPageContentPlace").load("Admin/ComponentandStatus");
+            $("#masterPageContentPlace").load("ComponentandStatus");
         }
 
     //pageload function when Metrics tab clicked
     function masterPageMetricsClicked() {
-            $("#masterPageContentPlace").load("Admin/PerformanceMetrics");
+            $("#masterPageContentPlace").load("PerformanceMetrics");
         }
 
     //pageload function when activate page tab clicked
     function masterPageAcivatePageClicked() {
-            $("#masterPageContentPlace").load("Admin/ActivatePage");
+            $("#masterPageContentPlace").load("ActivatePage");
         }
 
     //pageload function when regitered admin tab clicked
     function masterPageRegisteredAdminClicked() {
-            $("#masterPageContentPlace").load("Admin/RegisteredAdmin");
+            $("#masterPageContentPlace").load("RegisteredAdmin");
         }
 
     //pageload function when settings tab clicked
     function masterPageSettingsClicked() {
-            $("#masterPageContentPlace").load("Admin/Settings");
+            $("#masterPageContentPlace").load("Settings");
     }
 
 
@@ -79,6 +79,14 @@
 
 
 //Component Page Functions
+    //function to toggle state of checkboxes when state of master checkbox is changed in component page
+    function checkUnCheck(source) {
+        checkboxes = document.getElementsByName('checkboxRow');
+        for (var i in checkboxes)
+            checkboxes[i].checked = source.checked;
+    }
+
+
     //function to open add master component modal
     function openAddMasterComponentModalFuntion() {                                                                                 
         $(function () {

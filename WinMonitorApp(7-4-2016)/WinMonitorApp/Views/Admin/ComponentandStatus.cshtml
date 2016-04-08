@@ -1,0 +1,267 @@
+﻿@using WinMonitorApp
+<div id="componentPageBody"></div>
+    <script>
+        $(document).ready(function () {
+            loadComponentsFromDB();
+        });
+    </script>
+        <input type="hidden" id="statusStoringfeild"/>
+
+
+<table class="table">
+    <tr>
+        <td>
+            <span style="float:left; font-size:larger; font-weight:500; padding-left:10px; padding-top:20px;">Components</span>
+            
+        </td>
+            <td style="float:left; font-size:larger; font-weight:500; padding-left:10px; padding-top:20px;">
+                    <!--div to add new component-->
+                    <div id="addComponentDiv">
+                    
+                        <!--combobox of type selection of to be added component-->
+                        <div class="dropdown">
+                            <span style="color:#67747c; font-size:large; font-weight:500;">Add:</span>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="addComponentMenu" data-toggle="dropdown">Add Component
+                            <span class="caret"></span></button>
+                
+                            <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="addComponentMenu" style="left: auto;" id="ulComponent">
+                    
+                                <!--adding master component option-->
+                                <li role="presentation"><a role="menuitem" tabindex="-1" id="liMasterComponent" onclick="openAddMasterComponentModalFuntion()">Master Component</a></li>
+                   
+                                <!--adding specific component option-->
+                                <li role="presentation"><a role="menuitem" tabindex="-1" id="liSpecificComponent"onclick="openAddSpecificComponentModalFuntion()">Specific Component</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        </td>
+            <td style="float:left; font-size:large; font-weight:500; padding-left:10px; padding-top:20px;">
+                    <!--div to select status-->
+                    <div id="componentStatusDiv">
+                        <div class="dropdown">
+                            <span style="color:#67747c; font-size:large; font-weight:500;">Status:</span>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="statusMenu" data-toggle="dropdown">UpdateStatus
+                            <span class="caret"></span></button>
+                
+                            <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="statusMenu" style="left: auto;" id="ulStatus;">
+                    
+                                <!--adding operational option-->
+                                <li role="presentation" ><a role="menuitem" tabindex="-1" id="liOperationalStatus">Operational</a></li>
+                   
+                                <!--adding minor outage option-->
+                                <li role="presentation" ><a role="menuitem" tabindex="-1" id="liMinorOutageStatus" onclick="openCreateIncidentModalFunction()">Minor Outage</a></li>
+
+                                <!--adding major outage option-->
+                                <li role="presentation"><a role="menuitem" tabindex="-1" id="liMajorOutageStatus" onclick="openCreateIncidentModalFunction()">Major Outage</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+        <td>
+
+        </td>
+    </tr>
+</table>
+<hr />
+        
+<button type="button" class="btn btn-link" id="componentDeleteButton" style="font-weight:lighter; float: left;" onclick="deleteSelectedComponents()">Delete</button>
+<br><br><br>
+    <div id="contentComponent">
+        <!--table of existing components-->
+        <table class="table table-hover" id="existingComponentTable">
+            <thead>
+                <tr>
+                    <td class="checkboxColumnComponentPage">
+                        <input type="checkbox" id="componentCheckBox" onclick="checkUnCheck(this, 'ComponentListfromComponentPageCheckBoxes')">
+                    </td>
+                    <td>
+                        Component
+                    </td>
+                    <td>
+                        Type
+                    </td>
+                    <td>
+                        Status
+                    </td>
+                    <td>
+                        Company
+                    </td>
+                    <td>
+                        Incident
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="existingComponentTableBody">
+               
+            </tbody>
+        </table>
+                
+        <br /><br />
+
+
+<!--to add custom.js functions after body load-->
+<script src="~/Scripts/custom.js"></script>
+
+
+        <!--Modals-->
+            <!--Add Master Component Modal -->
+            <div class = "modal fade" id = "AddMasterComponentModal" tabindex = "-1" role = "dialog" aria-labelledby = "AddMasterComponentModalLabel" aria-hidden = "true">
+               <div class = "modal-dialog">
+                  <div class = "modal-content">
+                  
+                      <!--dialog box header-->
+                     <div class = "modal-header">
+
+                         <!--dialog box close button-->
+                         <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                              &times;
+                        </button>
+
+                         <!--dialog box label-->
+                        <h4 class = "modal-title" id = "AddMasterComponentModalLabel" style="color:#0067BB;">
+                           <b>Choose Component</b>
+                        </h4>
+                     </div>
+                 
+                      <!--dialog box body-->
+                     <div class = "modal-body">
+                        <table class="table" id="addMasterComponentModalTable" style="text-align:center;">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="selectAllMasterComponentCheckBox" onclick="checkUnCheck(this, 'masterComponentListfromDBCheckBoxes')"/>
+                                    </td>
+                                    <td style="font-weight:500; font-size:large;">
+                                        COMPONENT
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody id="addMasterComponentModalTableBody">
+                            </tbody>
+                        </table>
+                     </div>
+         
+                      <!--dialog box footer-->
+                     <div class = "modal-footer">
+
+                        <!--dialog box add component button-->
+                        <button type = "button" class = "btn btn-primary" onclick="addMasterComponentToDBAndPage()" data-dismiss = "modal">
+                           Add
+                        </button>
+
+                        <!--dialog box Close Button-->
+                        <button type = "button" class = "btn btn-default" data-dismiss = "modal">
+                           Close
+                        </button>
+
+                     </div>                                             <!--dialog box footer div closed-->
+         
+                  </div>                                                <!--dialog box content div closed--> 
+                                                              
+               </div>                                                   <!--dialog box modal div closed-->                                                  
+  
+            </div>    
+                                                      <!--add master component modal div closed-->  
+            <!--Add Specific Component adding Modal -->
+            <div class = "modal fade" id = "AddSpecificComponentModal" tabindex = "-1" role = "dialog" aria-labelledby = "AddSpecificComponentModalLabel" aria-hidden = "true">
+               <div class = "modal-dialog">
+                  <div class = "modal-content">
+                  
+                      <!--dialog box header-->
+                     <div class = "modal-header">
+
+                         <!--dialog box close button-->
+                         <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                              &times;
+                        </button>
+
+                         <!--dialog box label-->
+                        <h4 class = "modal-title" id = "AddSpecificComponentModalLabel" style="color:#0067BB;">
+                           <b>Component</b>
+                        </h4>
+                     </div>
+                 
+                      <!--dialog box body-->
+                     <div class = "modal-body">
+                        <form id="addSpecificComponentForm">
+                            <label style="width:30%">Name:</label><input type="text" id="formComponentName"/>
+                        </form>
+                     </div>
+         
+                      <!--dialog box footer-->
+                     <div class = "modal-footer">
+
+                        <!--dialog box add component button-->
+                        <button type = "button" class = "btn btn-primary" id="btnaddSpecificComponent" data-dismiss = "modal">
+                           Add
+                        </button>
+
+                        <!--dialog box Close Button-->
+                        <button type = "button" class = "btn btn-default" data-dismiss = "modal">
+                           Close
+                        </button>
+
+                     </div>                                             <!--dialog box footer div closed-->
+         
+                  </div>                                                <!--dialog box content div closed--> 
+                                                              
+               </div>                                                   <!--dialog box modal div closed-->                                                  
+  
+            </div>  
+                                                                <!--add specific component modal div closed-->
+            <!--Incident Raising Modal-->
+            <div class = "modal fade" id = "raiseIncidentModal" tabindex = "-1" role = "dialog" aria-labelledby = "raiseIncidentModalLabel" aria-hidden = "true">
+               <div class = "modal-dialog">
+                  <div class = "modal-content">
+                  
+                      <!--dialog box header-->
+                     <div class = "modal-header">
+
+                         <!--dialog box close button-->
+                         <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                              &times;
+                        </button>
+
+                         <!--dialog box label-->
+                        <h4 class = "modal-title" id = "raiseIncidentModalLabel" style="color:#0067BB;">
+                           <b>Incident</b>
+                        </h4>
+                     </div>
+                 
+                      <!--dialog box body-->
+                     <div class = "modal-body">
+                                <table style="color:#900000">
+                                    <tr>
+                                        <label style="width:30%; float:left;">Name</label>
+                                        <input type="text" id="formIncidentName"/><br><br>
+                                    </tr>
+
+                                    <tr>
+                                        <label style="width:30%; float:left;">Details</label>
+                                        <textarea rows="3" cols="22" id="formIncidentDetails"/>
+                                    </tr>
+                                </table>
+                     </div>
+         
+                      <!--dialog box footer-->
+                     <div class = "modal-footer">
+
+                        <!--dialog box add component button-->
+                        <button type = "button" class = "btn btn-primary" id="btnaddIncident" data-dismiss = "modal">
+                           Add
+                        </button>
+
+                        <!--dialog box Close Button-->
+                        <button type = "button" class = "btn btn-default" data-dismiss = "modal">
+                           Close
+                        </button>
+
+                     </div>                                             <!--dialog box footer div closed-->
+         
+                  </div>                                                <!--dialog box content div closed--> 
+                                                              
+               </div>                                                   <!--dialog box modal div closed-->                                                  
+  
+            </div>                                                      <!--add master component modal div closed-->  
+
+        </div>

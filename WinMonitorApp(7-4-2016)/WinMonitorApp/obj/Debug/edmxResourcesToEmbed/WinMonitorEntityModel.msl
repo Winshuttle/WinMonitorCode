@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WinMonitorEntityModelStoreContainer" CdmEntityContainer="WinMonitorEntityModelContext">
+    <EntitySetMapping Name="DBCompanies">
+      <EntityTypeMapping TypeName="WinMonitorEntityModel.DBCompany">
+        <MappingFragment StoreEntitySet="DBCompany">
+          <ScalarProperty Name="DBCompanyId" ColumnName="DBCompanyId" />
+          <ScalarProperty Name="DBCompanyName" ColumnName="DBCompanyName" />
+          <ScalarProperty Name="DBURL" ColumnName="DBURL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DBComponent_With_Status">
+      <EntityTypeMapping TypeName="WinMonitorEntityModel.DBComponent_With_Status">
+        <MappingFragment StoreEntitySet="DBComponent_With_Status">
+          <ScalarProperty Name="DBCSId" ColumnName="DBCSId" />
+          <ScalarProperty Name="DBComponentName" ColumnName="DBComponentName" />
+          <ScalarProperty Name="DBStatus" ColumnName="DBStatus" />
+          <ScalarProperty Name="DBType" ColumnName="DBType" />
+          <ScalarProperty Name="DBCompanyId" ColumnName="DBCompanyId" />
+          <ScalarProperty Name="DBMasterComponentName" ColumnName="DBMasterComponentName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DBIncidents">
+      <EntityTypeMapping TypeName="WinMonitorEntityModel.DBIncident">
+        <MappingFragment StoreEntitySet="DBIncidents">
+          <ScalarProperty Name="DBIncidentId" ColumnName="DBIncidentId" />
+          <ScalarProperty Name="DBIncidentName" ColumnName="DBIncidentName" />
+          <ScalarProperty Name="DBCSId" ColumnName="DBCSId" />
+          <ScalarProperty Name="DBDescription" ColumnName="DBDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DBLogins">
+      <EntityTypeMapping TypeName="WinMonitorEntityModel.DBLogin">
+        <MappingFragment StoreEntitySet="DBLogin">
+          <ScalarProperty Name="DBUsername" ColumnName="DBUsername" />
+          <ScalarProperty Name="DBPassword" ColumnName="DBPassword" />
+          <ScalarProperty Name="DBAccountType" ColumnName="DBAccountType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DBMaster_DBComponent_With_Status">
+      <EntityTypeMapping TypeName="WinMonitorEntityModel.DBMaster_DBComponent_With_Status">
+        <MappingFragment StoreEntitySet="DBMaster_DBComponent_With_Status">
+          <ScalarProperty Name="DBMasterComponentName" ColumnName="DBMasterComponentName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DBSubscriptions">
+      <EntityTypeMapping TypeName="WinMonitorEntityModel.DBSubscription">
+        <MappingFragment StoreEntitySet="DBSubscriptions">
+          <ScalarProperty Name="DBSubscriptionsId" ColumnName="DBSubscriptionsId" />
+          <ScalarProperty Name="DBName" ColumnName="DBName" />
+          <ScalarProperty Name="DBEmail" ColumnName="DBEmail" />
+          <ScalarProperty Name="DBPhone" ColumnName="DBPhone" />
+          <ScalarProperty Name="DBType" ColumnName="DBType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DBLogHistories">
+      <EntityTypeMapping TypeName="WinMonitorEntityModel.DBLogHistory">
+        <MappingFragment StoreEntitySet="DBLogHistory">
+          <ScalarProperty Name="DBDateTime" ColumnName="DBDateTime" />
+          <ScalarProperty Name="DBIncidentDetails" ColumnName="DBIncidentDetails" />
+          <ScalarProperty Name="DBIncidentName" ColumnName="DBIncidentName" />
+          <ScalarProperty Name="DBComponentName" ColumnName="DBComponentName" />
+          <ScalarProperty Name="DBIncidentId" ColumnName="DBIncidentId" />
+          <ScalarProperty Name="DBCSId" ColumnName="DBCSId" />
+          <ScalarProperty Name="DBCompanyId" ColumnName="DBCompanyId" />
+          <ScalarProperty Name="DBLogId" ColumnName="DBLogId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

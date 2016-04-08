@@ -1,0 +1,103 @@
+﻿@using WinMonitorApp.Models
+
+<span style="float:left; font-size:larger; font-weight:500; margin-left:10px; margin-top:20px;">Settings</span>
+<br><br><hr /><br><br><br><br><br><br><br><br><br>
+<div class="row">
+    <div class="col-sm-4">
+        Account Name
+    </div>
+    <div class="col-sm-8">
+        <!--Database Values Here-->
+    </div>
+</div>
+
+<br /><br />
+
+<div class="row">
+    <div class="col-sm-4">
+        Account Type
+    </div>
+    <div class="col-sm-8">
+        <!--Database Values Here-->
+    </div>
+</div>
+
+<br /><br /><br /><br /><br /><br />
+
+<div class="row">
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-4">
+        <button type="button" class="btn btn-primary text-center" id="btnchangepassword" onclick="changePasswordSettings()">
+            Change Password
+        </button>
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+</div>
+
+
+<!--to add custom.js functions after body load-->
+<script src="~/Scripts/custom.js"></script>
+
+
+<!--modal-->
+   <div class = "modal fade" id = "changePasswordModal" tabindex = "-1" role = "dialog" aria-labelledby = "changePasswordModalLabel" aria-hidden = "true">
+                <div class = "modal-dialog">
+                    <div class = "modal-content">
+                        <div class = "modal-header">
+                            <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                                &times;
+                            </button>
+            
+                             <h4 class = "modal-title" id = "changePasswordModalLabel" style="color:#0067BB;">
+                                 Change Password
+                             </h4>
+                     </div>
+         
+                <div class = "modal-body">
+                     <form id="FormModalSettingsPage">
+                         <div class="row">
+                            <div class="col-sm-4" style="text-align:left;">
+                                <span>Old Password</span>
+                            </div>  
+                             <div class="col-sm-8" style="text-align:left;">
+                                <input type="password" id="OldPassword" />
+                            </div>
+                        </div>
+                         <br />
+                         <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>New Password</span>
+                             </div>
+                             <div class="col-sm-8" style="text-align:left;">
+                                 <input type="password"  id="NewPassword"/>
+                             </div>
+                         </div>    
+                         <br />
+                         <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>Confirm Password</span>
+                             </div>
+                             <div class="col-sm-8" style="text-align:left;">
+                                 <input type="password"  id="ConfirmNewPassword">
+                             </div>
+                         </div>    
+                     </form>
+                 </div>
+         
+                <div class = "modal-footer">
+                    <button type = "button" class = "btn btn-primary" id="btnChangePassword">
+                         Change
+                    </button>
+
+                    <button type = "button" class = "btn btn-default" data-dismiss = "modal">
+                         Close
+                    </button>
+                </div>
+            </div>                                                
+        </div>                                               
+    </div>                                                      
+             

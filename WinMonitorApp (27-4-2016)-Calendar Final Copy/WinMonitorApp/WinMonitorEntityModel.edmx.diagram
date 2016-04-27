@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bfd8f0bc02484392939f0125f11005a0" Name="Diagram1">
+        <EntityTypeShape EntityType="WinMonitorEntityModel.DBCalendar" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinMonitorEntityModel.DBCompany" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinMonitorEntityModel.DBComponent_With_Status" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinMonitorEntityModel.DBDataCenter" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinMonitorEntityModel.DBIncident" Width="1.5" PointX="8.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinMonitorEntityModel.DBLogHistory" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinMonitorEntityModel.DBLogin" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinMonitorEntityModel.DBMaster_DBComponent_With_Status" Width="1.5" PointX="3.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinMonitorEntityModel.DBSubscription" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <AssociationConnector Association="WinMonitorEntityModel.FK__DBCalenda__DBCom__4AD81681" ManuallyRouted="false" />
+        <AssociationConnector Association="WinMonitorEntityModel.FK__DBCompone__DBCom__4865BE2A" ManuallyRouted="false" />
+        <AssociationConnector Association="WinMonitorEntityModel.FK__DBSubscri__DBCom__4DB4832C" ManuallyRouted="false" />
+        <AssociationConnector Association="WinMonitorEntityModel.FK__DBCompone__DBMas__477199F1" ManuallyRouted="false" />
+        <AssociationConnector Association="WinMonitorEntityModel.FK__DBInciden__DBCSI__4B422AD5" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

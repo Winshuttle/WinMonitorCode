@@ -1,0 +1,262 @@
+﻿<link rel="stylesheet" href="~/css/CustomCalendar.css"/>
+<link rel="stylesheet" href="~/css/jquery.datetimepicker.css" />
+<script src="~/Scripts/CustomCalendar.js"></script>
+<script src="~/Scripts/jquery.datetimepicker.full.min.js"></script>
+<script src="~/Scripts/jquery-ui-1.11.4.js"></script>
+<script src="~/Scripts/moment.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#datetimepickerStartTime').hover(function () {
+            $('#datetimepickerStartTime').datetimepicker(datetimepickerOptions);
+            if ($('#datetimepickerStartTime:hover') == false) {
+                $('#datetimepickerStartTime').datetimepicker('disable');
+            }
+        });
+        $('#datetimepickerEndTime').hover(function () {
+            $('#datetimepickerEndTime').datetimepicker(datetimepickerOptions);
+            if ($('#datetimepickerEndTime:hover') == false) {
+                $('#datetimepickerEndTime').datetimepicker('disable');
+            }
+        });
+
+        var datetimepickerOptions = {
+            lang: 'cs',
+            step: 30,
+            dayOfWeekStart: 1,      //week begins with monday
+        }
+
+        InactivateEvents();
+    });
+</script>
+
+
+<br />
+<table>
+    <tr>
+    <td><span style="font-size:x-large; font-weight:500; float:left; margin-left:10px;">Edit Maintenance Calendar</span></td>
+    <td>
+        <img src="/Content/Images/barCalendar.jpg" alt="Color Scheme" style="float:left;"/>
+    </td>
+    </tr>
+</table><hr />
+
+<div class="container">
+	<div id="calendar"></div>
+</div>
+
+<input type="hidden" id="HiddenEventId"/>
+
+
+<!--Modals-->
+<!--Modal 1-->
+<!-- day click add incident modal-->
+   <div class = "modal fade" id = "addDayClickEventModal" tabindex = "-1" role = "dialog" aria-labelledby = "addEventCalendarModalLabel" aria-hidden = "true" >
+                <div class = "modal-dialog">
+                    <div class = "modal-content">
+                        
+                        <!--dialog box header-->
+                        <div class = "modal-header">
+                            
+                             <!--dialog box close button-->
+                            <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                                &times;
+                            </button>
+            
+                            <!--dialog box label--> 
+                            <h4 class = "modal-title" id = "addEventCalendarModalLabel" style="color:#0067BB;">
+                                 <b>Add Event</b>
+                             </h4>
+                     </div>
+         
+                <!--dialog box body-->
+                <div class = "modal-body">
+                     <form>
+                         <div class="row">
+                            <div class="col-sm-4" style="text-align:left;">
+                                <span>Title</span>
+                            </div>  
+                             <div class="col-sm-8" style="text-align:left;">
+                                <input type="text" id="EventTitle"/>
+                            </div>
+                        </div>
+                         <br />
+                         <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>Details</span>
+                             </div>
+                             <div class="col-sm-8" style="text-align:left;">                        
+                                  <textarea rows="4" cols="22" id="EventDetails"></textarea>
+                             </div>
+                         </div>
+                         <br />
+                           <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>Start Time</span>
+                             </div>
+                             <div class="col-sm-6" style="text-align:left;">                        
+                                  <!--Jquery Date Event Picker Here-->
+                                        <input type="text" id="datetimepickerStartTime">
+                             </div>
+                         </div>
+                         <br />
+                         <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>End Time</span>
+                             </div>
+                                <div class="col-sm-8" style="text-align:left;">  
+                                   <!--Jquery Date Event Picker Here-->
+                                        <input type="text" id="datetimepickerEndTime">
+                             </div>
+                         </div>
+                         <br />
+                         <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>Repetititon</span>
+                             </div>
+                             <div class="col-sm-8" style="text-align:left;">                        
+                                  <select style="width:217px;" id="selectCronString">
+                                      <option value="Default">Default</option>
+                                  </select>
+                             </div>
+                         </div>
+                         <br />
+                         <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>Type</span>
+                             </div>
+                             <div class="col-sm-8" style="text-align:left;">                        
+                                    <select style="width:217px;" id="selectTypeMaintenance">
+                                        <option value="Maintenance">Maintenance</option>
+                                        <option value="Performance Degradation">Performance Degradation</option>
+                                        <option value="Service Disruption">Service Disruption</option>
+                                    </select>
+                             </div>
+                         </div>
+                         <br />
+                     </form>
+                 </div>
+         
+                <!--dialog box footer-->
+                <div class = "modal-footer">
+                    <!--dialog box add component button-->
+                        <button type = "button" class = "btn btn-primary" data-dismiss="modal" id="btnAddEvent" onclick="addEvent()">
+                           Add Event
+                        </button>
+
+                        <!--dialog box Close Button-->
+                        <button type = "button" class = "btn btn-default" data-dismiss = "modal">
+                           Close
+                        </button>
+                </div>
+            </div>                                                
+        </div>                                               
+    </div>                                                      
+            
+    
+
+
+
+<!--Modal 2-->
+<!--display incident details and can delete on event Click-->
+   <div class = "modal fade" id = "eventClickEventModal" tabindex = "-1" role = "dialog" aria-labelledby = "clickEventCalendarModalLabel" aria-hidden = "true" >
+                <div class = "modal-dialog">
+                    <div class = "modal-content">
+                        
+                        <!--dialog box header-->
+                        <div class = "modal-header">
+                            
+                             <!--dialog box close button-->
+                            <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                                &times;
+                            </button>
+            
+                            <!--dialog box label--> 
+                            <h4 class = "modal-title" id = "clickEventCalendarModalLabel" style="color:#0067BB;">
+                                 <b>Event Details</b>
+                             </h4>
+                     </div>
+         
+                <!--dialog box body-->
+                <div class = "modal-body">
+                     <form>
+                         <div class="row">
+                            <div class="col-sm-4" style="text-align:left;">
+                                <span>Title</span>
+                            </div>  
+                             <div class="col-sm-8" style="text-align:left;">
+                                <input type="text" style="border:none" id="EventTitleShow" readonly="readonly"/>
+                            </div>
+                        </div>
+                         <br />
+                         <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>Details</span>
+                             </div>
+                             <div class="col-sm-8" style="text-align:left;">                        
+                                  <textarea rows="3" cols="22" style="border:none" id="EventDetailsShow" readonly="readonly"></textarea>
+                             </div>
+                         </div>
+                         <br />
+                           <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>Start Time</span>
+                             </div>
+                             <div class="col-sm-6" style="text-align:left;">                        
+                                  <input type="text" style="border:none" id="datetimepickerStartTimeShow" readonly="readonly"/>
+                             </div>
+                         </div>
+                         <br />
+                         <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>End Time</span>
+                             </div>
+                                <div class="col-sm-8" style="text-align:left;">  
+                                  <input type="text" style="border:none" id="datetimepickerEndTimeShow" readonly="readonly"/>
+                             </div>
+                         </div>
+                         <br />
+                         <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>Repetititon</span>
+                             </div>
+                             <div class="col-sm-8" style="text-align:left;">                        
+                                  <input type="text" style="border:none" id="selectCronStringShow" readonly="readonly"/>
+                             </div>
+                         </div>
+                         <br />
+                         <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>Type</span>
+                             </div>
+                             <div class="col-sm-8" style="text-align:left;">                        
+                                   <input type="text" style="border:none" id="selectTypeMaintenanceShow" readonly="readonly"/>
+                             </div>
+                         </div>
+                         <br />
+                         <div class="row">
+                             <div class="col-sm-4" style="text-align:left;">
+                                 <span>Status</span>
+                             </div>
+                             <div class="col-sm-8" style="text-align:left;">                        
+                                   <input type="text" style="border:none" id="StatusShow" readonly="readonly"/>
+                             </div>
+                         </div>
+                     </form>
+                 </div>
+         
+                <!--dialog box footer-->
+                <div class = "modal-footer">
+                    <!--dialog box add component button-->
+                        <button type = "button" class = "btn btn-primary" data-dismiss="modal" id="btnDeleteEvent" onclick="deleteEvent()">
+                           Delete Event
+                        </button>
+
+                        <!--dialog box Close Button-->
+                        <button type = "button" class = "btn btn-default" data-dismiss = "modal">
+                           Close
+                        </button>
+                </div>
+            </div>                                                
+        </div>                                               
+    </div>

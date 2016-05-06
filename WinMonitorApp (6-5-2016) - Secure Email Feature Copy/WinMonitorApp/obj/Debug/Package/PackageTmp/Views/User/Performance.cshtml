@@ -1,0 +1,45 @@
+﻿<!-- Defining Tags for Using JQuery-->
+
+<script src="~/Scripts/jquery-1.10.1.min.js"></script>
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+
+<!--Bootstrap Value imports-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="~/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="~/css/bootstrap-theme.min.css"/>
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/customPerformance.js"></script>
+
+<link rel="stylesheet" href="~/css/custom.css" />
+
+<h3 style="font-size:x-large; font-weight:500; float:left; margin-left:10px;">System Performance</h3>
+<br /><br /><hr />
+
+<style>
+    td {
+        margin:0;
+        padding:0;
+        text-indent: -1px; 
+    }
+</style>
+
+<div id="ContainerDiv"> 
+<div id="HeaderDiv">
+    <button type="button" class="btn btn-lg" id="btnWeekHistory" style="float:right; background-color:#484848; color:white;" onclick="functionbtnHistory()">History</button>
+    <button type="button" class="btn btn-lg " id="btnRecent" style="float:right;  background-color:#484848; color:white;" onclick="functionbtnRecent()">Recent</button>
+</div>
+<table class="table table-hover table-stripped" id="tablePerformance">
+    <thead>
+        <tr>
+            <td>Present</td>
+            <td>Past Data</td>
+        </tr>
+    </thead>
+    <tbody>
+        
+	</tbody>
+</table>
+</div>

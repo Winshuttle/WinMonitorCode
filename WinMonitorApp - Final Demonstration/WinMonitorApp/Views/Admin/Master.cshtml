@@ -1,0 +1,133 @@
+﻿<!-- Defining Tags for Using JQuery-->
+
+<script src="~/Scripts/jquery-1.10.1.min.js"></script>
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<script src="~/Scripts/custom.js"></script>
+
+<!--Bootstrap Value imports-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--For IE compatibility-->
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
+
+<link rel="stylesheet" href="~/css/bootstrap.min.css"/>
+
+<link rel="stylesheet" href="~/css/bootstrap-theme.min.css"/>
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="~/css/custom.css" />
+
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        document.title = "WinMonitor";
+
+        $("#masterPageContentPlace").load("CompanyDashboard/?commonCheck=CheckIfTrueErrorWin");
+        var url = document.location.href;
+        var roughVar = url.split("?");
+        url = roughVar[0];
+        window.history.pushState({}, null, url);
+
+        $("#adminNameHiddenField").val(window.sessionStorage.getItem("AdminName"));
+    });
+
+    $(window).unload(function () {
+        window.location.href = window.location.href+ "?CheckLogin=CredentialTrue";
+    });
+
+</script>
+
+<!--Whole Master page div-->
+<div id="masterPageWholeBody" onload="onMasterPageLoadMethod()">
+<!-- Screen Header HTML-->
+    <script>
+        $(document).ready(function () {
+            $("#masterPageContentPlace").load("CompanyDashboard");
+        });
+
+    </script>
+    <!--Upper Top Default Blue Bar-->
+    <div id="StartColorDiv" style="height:20px; width:100%; color:#0067BB; background-color:#0067BB;">
+           Blue Color
+    </div>
+    
+
+    <!--Middle Top Default Tag-->
+	<div id="headerDiv" class="row">
+		<div class="col-xs-9" style="text-align:left;">
+			<h2>
+				<span style="color:#0067BB; font-weight:800; margin-left:20px;">WIN</span><span style="color:black; font-weight:800;">MONITOR</span>
+			</h2>
+		</div>
+        <input type="hidden" id="companyIdStoringTextField"/>
+		<div class="col-xs-3" style="text-align:right;">
+			<h4>
+				<img src="@Url.Content("~/Content/Images/CustomerLogo.png")" style="width:200px; height:40px; margin-right:5px;"/><br />
+					<button type="button"  class="btn btn-link" id="btnLogout" style="font-weight:500; font-size:18px; height:15px; margin:5px; color: #67747c;">
+						Logout
+					</button>
+			</h4>
+		</div>
+	</div>
+    
+    <!--Lower Top Default Black Bar-->
+    <div id="EndColorDiv" style="height:25px; width:100%; color:#484848; background-color:#484848;">
+           Black Color
+    </div>
+
+    <!--Screen Body-->
+    <table>
+        <tr>
+            <td style="vertical-align:top;">
+			    <!--master page tab button panel-->
+                <div class="btn-group-vertical" style="width:200px;" id="vertical-button-group">
+				    <button type="button" class="btn btn-link masterPageTabButton" id="btndashboard" onclick="masterPageDashBoardClicked(this)">
+					    <b>Dashboard</b>
+				    </button>
+				    <button type="button" class="btn btn-link masterPageTabButton" id="btncomponents" onclick="masterPageComponentClicked(this)">
+					    <b>Components</b>
+				    </button>
+				    <button type="button" class="btn btn-link masterPageTabButton" id="btnactivate" onclick="masterPageMaintenanceCalendarClicked(this)">
+					    <b>Maintenance Calendar</b>
+				    </button>
+				    <button type="button" class="btn btn-link masterPageTabButton" id="btnregistered" onclick="masterPageRegisteredAdminClicked(this)">
+					    <b>Administrators</b>
+				    </button>
+				    <!--<button type="button" class="btn btn-link masterPageTabButton" id="btnsettings" onclick="masterPageSettingsClicked(this)">
+					    <b>Settings</b>
+				    </button>-->
+			    </div>
+            </td>
+            <!--page content placement place-->
+		    <td style="width:100%; height:100%; vertical-align:top;" id="masterPageContentPlace">
+		    </td>	
+        </tr>
+    </table>
+
+ <!--to add custom.js functions after body load-->
+<script src="~/Scripts/custom.js"></script>
+    <br /><br />
+    <!--Screen Footer-->
+    <div id="footer" class="row-fluid s4-notdlg">
+	        <div class="container-fluid">
+		        <div id="footer-links">
+			        <ul>
+				        <li style="list-style-type:none; display:inline;"><a href="http://help.winshuttle.com/foundation " target="_blank">Help</a>&nbsp;&nbsp;</li>
+				        <li style="list-style-type:none; display:inline;"><a href="http://www.winshuttle.com/support-training/" target="_blank">Support</a>&nbsp;&nbsp;</li> 
+				        <li style="list-style-type:none; display:inline;"><a href="http://www.winshuttle.com/About" target="_blank">About</a>&nbsp;&nbsp;</li>  
+                        <li style="list-style-type:none; display:inline;"><a href="http://www.winshuttle.com/Privacy" target="_blank">Privacy</a>&nbsp;&nbsp;</li> 
+                        <li style="list-style-type:none; display:inline;"><a href="http://www.winshuttle.com/EULA" target="_blank">EULA</a>&nbsp;&nbsp;</li>
+                        <li style="list-style-type:none; display:inline; float:right">© 2008-2016 Winshuttle, LLC</li>
+				    </ul>
+	        </div>
+        </div>
+    </div>
+   
+    </div>
+    <input type="hidden" id="adminNameHiddenField"/>

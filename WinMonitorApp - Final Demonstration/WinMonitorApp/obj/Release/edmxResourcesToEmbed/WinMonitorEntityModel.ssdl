@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WinMonitorEntityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DBCalendar">
+    <Key>
+      <PropertyRef Name="DBEventId" />
+    </Key>
+    <Property Name="DBEventId" Type="int" Nullable="false" />
+    <Property Name="DBEventTitle" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DBEventDetails" Type="varchar" MaxLength="200" />
+    <Property Name="DBEventStartTime" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="DBEventEndTime" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="DBEventDifferenceTime" Type="varchar" MaxLength="50" />
+    <Property Name="DBEventMaintenance" Type="varchar" MaxLength="50" />
+    <Property Name="DBEventStatus" Type="varchar" MaxLength="50" />
+    <Property Name="DBCompanyId" Type="int" />
+  </EntityType>
+  <EntityType Name="DBCompany">
+    <Key>
+      <PropertyRef Name="DBCompanyId" />
+    </Key>
+    <Property Name="DBCompanyId" Type="int" Nullable="false" />
+    <Property Name="DBCompanyName" Type="varchar" MaxLength="50" />
+    <Property Name="DBURL" Type="varchar" MaxLength="200" />
+    <Property Name="DBPrimaryCenter" Type="varchar" MaxLength="50" />
+    <Property Name="DBSecondaryCenter" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DBComponent_With_Status">
+    <Key>
+      <PropertyRef Name="DBCSId" />
+    </Key>
+    <Property Name="DBCSId" Type="int" Nullable="false" />
+    <Property Name="DBComponentName" Type="varchar" MaxLength="50" />
+    <Property Name="DBStatus" Type="varchar" MaxLength="50" />
+    <Property Name="DBType" Type="varchar" MaxLength="50" />
+    <Property Name="DBCompanyId" Type="int" />
+    <Property Name="DBMasterComponentName" Type="varchar" MaxLength="50" />
+    <Property Name="DBCenterName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DBDataCenter">
+    <Key>
+      <PropertyRef Name="DBDataCenterId" />
+    </Key>
+    <Property Name="DBDataCenterId" Type="int" Nullable="false" />
+    <Property Name="DBDataCenterName" Type="varchar" MaxLength="50" />
+    <Property Name="DBTypeName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DBEmailPages">
+    <Key>
+      <PropertyRef Name="DBEmailPageId" />
+    </Key>
+    <Property Name="DBEmailPageId" Type="int" Nullable="false" />
+    <Property Name="DBEmailPageName" Type="varchar" MaxLength="50" />
+    <Property Name="DBEmailContent" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="DBIncidents">
+    <Key>
+      <PropertyRef Name="DBIncidentId" />
+    </Key>
+    <Property Name="DBIncidentId" Type="int" Nullable="false" />
+    <Property Name="DBIncidentName" Type="varchar" MaxLength="50" />
+    <Property Name="DBCSId" Type="int" />
+    <Property Name="DBDescription" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="DBLogHistory">
+    <Key>
+      <PropertyRef Name="DBLogId" />
+    </Key>
+    <Property Name="DBLogId" Type="int" Nullable="false" />
+    <Property Name="DBCompanyId" Type="int" />
+    <Property Name="DBCSId" Type="int" />
+    <Property Name="DBIncidentId" Type="int" />
+    <Property Name="DBComponentName" Type="varchar" MaxLength="50" />
+    <Property Name="DBIncidentName" Type="varchar" MaxLength="50" />
+    <Property Name="DBIncidentDetails" Type="varchar" MaxLength="200" />
+    <Property Name="DBDateTimeStart" Type="datetime2" Precision="7" />
+    <Property Name="DBStatus" Type="varchar" MaxLength="50" />
+    <Property Name="DBDateTimeEnd" Type="datetime2" Precision="7" />
+  </EntityType>
+  <EntityType Name="DBLogin">
+    <Key>
+      <PropertyRef Name="DBUsername" />
+    </Key>
+    <Property Name="DBUsername" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DBPassword" Type="varchar" MaxLength="50" />
+    <Property Name="DBAccountType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DBMaster_DBComponent_With_Status">
+    <Key>
+      <PropertyRef Name="DBMasterComponentName" />
+    </Key>
+    <Property Name="DBMasterComponentName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DBSubscriptions">
+    <Key>
+      <PropertyRef Name="DBSubscriptionsId" />
+    </Key>
+    <Property Name="DBSubscriptionsId" Type="int" Nullable="false" />
+    <Property Name="DBName" Type="varchar" MaxLength="50" />
+    <Property Name="DBEmail" Type="varchar" MaxLength="50" />
+    <Property Name="DBCompanyId" Type="int" />
+  </EntityType>
+  <Association Name="FK__DBCalenda__DBCom__52442E1F">
+    <End Role="DBCompany" Type="Self.DBCompany" Multiplicity="0..1" />
+    <End Role="DBCalendar" Type="Self.DBCalendar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DBCompany">
+        <PropertyRef Name="DBCompanyId" />
+      </Principal>
+      <Dependent Role="DBCalendar">
+        <PropertyRef Name="DBCompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DBCompone__DBCom__4865BE2A">
+    <End Role="DBCompany" Type="Self.DBCompany" Multiplicity="0..1" />
+    <End Role="DBComponent_With_Status" Type="Self.DBComponent_With_Status" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DBCompany">
+        <PropertyRef Name="DBCompanyId" />
+      </Principal>
+      <Dependent Role="DBComponent_With_Status">
+        <PropertyRef Name="DBCompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DBCompone__DBMas__257187A8">
+    <End Role="DBMaster_DBComponent_With_Status" Type="Self.DBMaster_DBComponent_With_Status" Multiplicity="0..1" />
+    <End Role="DBComponent_With_Status" Type="Self.DBComponent_With_Status" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DBMaster_DBComponent_With_Status">
+        <PropertyRef Name="DBMasterComponentName" />
+      </Principal>
+      <Dependent Role="DBComponent_With_Status">
+        <PropertyRef Name="DBMasterComponentName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DBInciden__DBCSI__2A363CC5">
+    <End Role="DBComponent_With_Status" Type="Self.DBComponent_With_Status" Multiplicity="0..1" />
+    <End Role="DBIncidents" Type="Self.DBIncidents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DBComponent_With_Status">
+        <PropertyRef Name="DBCSId" />
+      </Principal>
+      <Dependent Role="DBIncidents">
+        <PropertyRef Name="DBCSId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DBSubscri__DBCom__2FEF161B">
+    <End Role="DBCompany" Type="Self.DBCompany" Multiplicity="0..1" />
+    <End Role="DBSubscriptions" Type="Self.DBSubscriptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DBCompany">
+        <PropertyRef Name="DBCompanyId" />
+      </Principal>
+      <Dependent Role="DBSubscriptions">
+        <PropertyRef Name="DBCompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="GetDateDiffInSec" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartTime" Type="datetime2" Mode="In" />
+    <Parameter Name="EndTime" Type="datetime2" Mode="In" />
+  </Function>
+  <EntityContainer Name="WinMonitorEntityModelStoreContainer">
+    <EntitySet Name="DBCalendar" EntityType="Self.DBCalendar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DBCompany" EntityType="Self.DBCompany" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DBComponent_With_Status" EntityType="Self.DBComponent_With_Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DBDataCenter" EntityType="Self.DBDataCenter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DBEmailPages" EntityType="Self.DBEmailPages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DBIncidents" EntityType="Self.DBIncidents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DBLogHistory" EntityType="Self.DBLogHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DBLogin" EntityType="Self.DBLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DBMaster_DBComponent_With_Status" EntityType="Self.DBMaster_DBComponent_With_Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DBSubscriptions" EntityType="Self.DBSubscriptions" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__DBCalenda__DBCom__52442E1F" Association="Self.FK__DBCalenda__DBCom__52442E1F">
+      <End Role="DBCompany" EntitySet="DBCompany" />
+      <End Role="DBCalendar" EntitySet="DBCalendar" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DBCompone__DBCom__4865BE2A" Association="Self.FK__DBCompone__DBCom__4865BE2A">
+      <End Role="DBCompany" EntitySet="DBCompany" />
+      <End Role="DBComponent_With_Status" EntitySet="DBComponent_With_Status" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DBCompone__DBMas__257187A8" Association="Self.FK__DBCompone__DBMas__257187A8">
+      <End Role="DBMaster_DBComponent_With_Status" EntitySet="DBMaster_DBComponent_With_Status" />
+      <End Role="DBComponent_With_Status" EntitySet="DBComponent_With_Status" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DBInciden__DBCSI__2A363CC5" Association="Self.FK__DBInciden__DBCSI__2A363CC5">
+      <End Role="DBComponent_With_Status" EntitySet="DBComponent_With_Status" />
+      <End Role="DBIncidents" EntitySet="DBIncidents" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DBSubscri__DBCom__2FEF161B" Association="Self.FK__DBSubscri__DBCom__2FEF161B">
+      <End Role="DBCompany" EntitySet="DBCompany" />
+      <End Role="DBSubscriptions" EntitySet="DBSubscriptions" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

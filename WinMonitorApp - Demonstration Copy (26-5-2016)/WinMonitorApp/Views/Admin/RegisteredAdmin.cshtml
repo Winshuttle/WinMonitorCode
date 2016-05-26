@@ -1,0 +1,57 @@
+﻿<span style="float:left; font-size:larger; font-weight:500; margin-left:10px; margin-top:20px;">Administrators</span>
+<br><br><hr /><br>
+
+<script>
+    $(document).ready(function () {
+     
+        $.ajax({
+            type: "get",
+            url: "jsonGetUser",
+            dataType: "json",
+            async: false,
+            cache: false,
+            success: function (data) {
+                var i;
+                var newRow;
+                for (i = 0; i < data.length; i++) {
+                   
+                    if (data[i].DBUsername.toLowerCase() == $("#adminNameHiddenField").val().toLowerCase()) {
+                        newRow = "<tr style='color:green;'><td>" + data[i].DBUsername + "</td><td>" + data[i].DBAccountType + "</td><td>Active</td></tr>";
+                        $("#RegisteredAdminTable").append(newRow);
+                    }
+                    else {
+                        newRow = "<tr style='color:orange;'><td>" + data[i].DBUsername + "</td><td>" + data[i].DBAccountType + "</td><td>Inactive</td></tr>";
+                        $("#RegisteredAdminTable").append(newRow);
+                    }
+                }
+            },
+            error: function () {
+                alert("error");
+            }
+        });
+    });
+</script>
+
+<div class="table-responsive">
+<table class="table table-hover" id="RegisteredAdminTable">
+    <thead>
+        <tr>
+            <td>
+                Admin Name
+            </td>
+            <td>
+                Account Type
+            </td>
+            <td>
+                Current Status
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+</table>
+</div>
+
+<!--to add custom.js functions after body load-->
+<script src="~/Scripts/custom.js"></script>

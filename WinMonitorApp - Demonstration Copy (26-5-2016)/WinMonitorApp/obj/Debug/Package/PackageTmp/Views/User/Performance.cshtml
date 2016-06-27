@@ -1,0 +1,205 @@
+﻿<!-- Defining Tags for Using JQuery-->
+
+<script src="~/Scripts/jquery-1.10.1.min.js"></script>
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+
+
+<!--Bootstrap Value imports-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="~/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="~/css/bootstrap-theme.min.css"/>
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/customPerformance.js"></script>
+<script src="~/Scripts/jquery-ui-1.11.4.js"></script>
+<script src="~/Scripts/moment.min.js"></script>
+<style>
+    .clickable:hover {
+        cursor:pointer;
+    }
+    .nopadding {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        functionbtnRecent();
+        $("#divForDetails").hide();
+        
+    });
+
+</script>
+<link rel="stylesheet" href="~/css/custom.css" />
+
+<h3 style="font-size:x-large; font-weight:500; float:left; margin-left:10px;">System Performance</h3>
+<br /><br /><hr />
+<input type="hidden" id="hiddenFieldForHistoryPage"/>
+<input type="hidden" id="totalDaysToShow"/>
+<input type="hidden" id="startOffset"/>
+<input type="hidden" id="endOffset"/> 
+<style>
+    td {
+        margin:0;
+        padding:0;
+        text-indent: -1px; 
+    }
+    .borderClass {
+        border-right: solid 1px #000;
+    }
+    #divForRecent > table > thead > tr > td {
+        padding-right: 8px;
+    }
+
+    #divForRecent > table > tbody > tr > td {
+        padding-right: 0px;
+    }
+    #divForWeekHistory > table > thead > tr > td {
+        padding-right: 8px;
+    }
+
+    #divForWeekHistory > table > tbody > tr > td {
+        padding-right: 0px;
+    }
+</style>
+<table>
+    <tr class="row">
+        <td class="col-md-2">
+            <div></div>
+        </td>
+        <td class="col-md-8">
+                <div id="ContainerDiv"> 
+                    <div id="HeaderDiv">
+                        <button type="button" class="btn btn-lg" id="btnWeekHistory" style="float:right; background-color:#484848; color:white;" onclick="functionbtnHistory()">History</button>
+                        <button type="button" class="btn btn-lg " id="btnRecent" style="float:right;  background-color:#484848; color:white;" onclick="functionbtnRecent()">Recent</button>
+                    </div><br><br><br>
+                    <div id="divForRecent">
+                        <br>
+                        <table class="table" width="100%" cellspacing="10px" id="statusTableForRecent">
+                            <thead>
+                                <tr>
+                                    <td style="text-align:center" class="borderClass">
+                                        Now
+                                    </td>
+                                    <td colspan="4" style="text-align:center">Last 24 Hours
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;" class="borderClass"><span id="presentTimeForRecent"></span>
+                                    </td>
+                                    <td style="width: 20%; text-align:center" class="borderClass">
+                                        Last 24 hours
+                                    </td>
+                                    <td style="width: 20%; text-align:center" class="borderClass">
+                                        Last 18 hours
+                                    </td>
+                                    <td style="width: 20%; text-align:center" class="borderClass">
+                                        Last 12 hours
+                                    </td>
+                                    <td style="width: 20%; text-align:center" class="borderClass">
+                                        Last 6 hours
+                                    </td>
+                                </tr>
+                            </thead> 
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Component
+                                    </td>
+                                    <td colspan="4">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="divForWeekHistory">
+                        <br>
+                        <table class="table" width="100%" cellspacing="10px" id="statusTableForWeekHistory">
+                            <thead>
+                                <tr>
+                                    <td style="text-align:center" class="borderClass">
+                                        Now
+                                    </td>
+                                    <td style="text-align:left"><img src="~/Content/Images/previous-Symbol.png" style="height:15px;width:15px" id="previousHistoryIcon" onclick="showPreviousHistory()" class="clickable"/>
+                                    </td>
+                                    <td colspan="5" style="text-align:center">Last <span id="spanForNoOfDays"></span> Days
+                                    </td>
+                                    <td style="text-align:right"><img src="~/Content/Images/forward-Symbol.png" style="height:15px;width:15px" id="nextHistoryIcon" onclick="showNextHistory()" class="clickable"/>
+                                    </td>
+                                </tr>        
+                                <tr>
+                                    <td style="width:12.5%;" class="borderClass"><span id="presentTimeForHistory"></span>
+                                    </td>
+                                    <td style="width: 12.5%; text-align:center" class="borderClass">
+                                        <span id="seventhDaySpan"></span>
+                                    </td>
+                                    <td style="width: 12.5%; text-align:center" class="borderClass">
+                                        <span id="sixthDaySpan"></span>
+                                    </td>
+                                    <td style="width: 12.5%; text-align:center" class="borderClass">
+                                        <span id="fifthDaySpan"></span>
+                                    </td>
+                                    <td style="width: 12.5%; text-align:center" class="borderClass">
+                                        <span id="fourthDaySpan"></span>
+                                    </td>
+                                    <td style="width: 12.5%; text-align:center" class="borderClass">
+                                        <span id="thirdDaySpan"></span>
+                                    </td>
+                                    <td style="width: 12.5%; text-align:center" class="borderClass">
+                                        <span id="secondDaySpan"></span>
+                                    </td>
+                                    <td style="width: 12.5%; text-align:center" class="borderClass">
+                                        <span id="firstDaySpan"></span>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Component
+                                    </td>
+                                    <td colspan="7">
+                                    </td>
+                                </tr>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+        <td class="col-md-2">
+            <div id="divForDetails">
+                <table>
+                    <tr>
+                        <td>
+                            <div id="divForStatusDetail" style="font-size:x-large; width:100%; height:10%"></div><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="font-size:medium; width:100%; height:10%">Start Time:<span id="spanForStartTime"></span></div><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="font-size:medium; width:100%; height:10%">End Time:<span id="spanForEndTime"></span></div><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="divForIncidentName" style="font-size:large; width:100%; height:10%"></div><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="divForIncidentDetails" style="font-size:small; width:100%; word-wrap: inherit;"></div><br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+    
+

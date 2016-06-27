@@ -1,0 +1,155 @@
+﻿@using WinMonitorApp.Models
+
+<!-- Defining Tags for Using JQuery-->
+
+<script src="~/Scripts/jquery-1.10.1.min.js"></script>
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+
+<!--Bootstrap Value imports-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--For IE compatibility-->
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
+<link rel="stylesheet" href="~/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/bootstrap-theme.min.css" />
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+<script src="~/Scripts/customUser.js"></script>
+
+<link rel="stylesheet" href="~/css/custom.css" />
+
+<link rel="stylesheet" href="../../css/jquery.dataTables.min.css">
+
+<script type="text/javascript" src="../../Scripts/jquery.dataTables.min.js"></script>
+
+<script src="~/Scripts/moment.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {   
+        onStatusPageReady(); 
+    });
+</script>
+
+<table>
+    <tr>
+    <td><span style="font-size:x-large; font-weight:500; text-align:left; margin-left:-350px; margin-top:20px">Component Status</span></td>
+    <td><input type="text" style="text-align:center; width:100%; border:none;" id="ShowMessage" readonly="readonly"/></td>
+    <td><button type ="button" class = "btn btn-lg btn-link" id="SubscribeUpdates" style="text-align:right; margin-right:-120px;">Subscribe Updates</button></td>
+    </tr>
+</table><hr /><br />
+
+<!--popover bootstrap plugin-->
+<div id="mySubscribeForm" class="hide">
+        <div>
+            Name :<input type="text" id="SubscribeName" /><br /><br />
+            Email : <input type="email" id="SubscribeEmail" /><br /><br />
+            <button type="button" class="btn btn-info" onclick="submitDetails()">Subscribe</button><br />
+        </div>
+</div>
+
+
+<div id="body" style="margin:15px;">
+    <div>
+        <table id="statTable"  class= "table table-hover" style="font-size:medium; font-weight:300; color:black;">
+            <thead>
+                <tr>
+                    <td>
+                        Component
+                    </td>
+                    <td>
+                       Status
+                    </td>
+                    <td>
+                        Data Center
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="statTableBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!--display incident on status page details-->
+<div class="modal fade" id="showIncidentDetailsOnStatusModalInUser" tabindex="-1" role="dialog" aria-labelledby="showIncidentDetailsOnStatusModalInUserLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!--dialog box header-->
+            <div class="modal-header">
+
+                <!--dialog box close button-->
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+
+                <!--dialog box label-->
+                <h4 class="modal-title" id="showIncidentDetailsOnStatusModalInUserLabel" style="color:#0067BB;">
+                    <b>Incident Details</b>
+                </h4>
+            </div>
+
+            <!--dialog box body-->
+            <div class="modal-body">
+                <form style="font-size:medium; font-weight:600;">
+                    <table style="width:100%;border-spacing: 20px;">
+                        <tr>
+                            <td style="width:33%; text-align:left;">
+                                <span>Incident Name</span>
+                            </td>
+                            <td style="width:66%; text-align:left;">
+                                <input type="text" style="border:none; width:100%;" id="IncidentNameShowInUser" readonly="readonly" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="width:33%; text-align:left;vertical-align:top">
+                                <span>Incident Details</span>
+                            </td>
+                            <td style="width:66%; text-align:left;">
+                                <textarea rows="3" cols="22" style="border:none; width:100%;" id="IncidentDetailsShowInUser" readonly="readonly"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="width:33%; text-align:left;">
+                                <span>Start Time</span>
+                            </td>
+                            <td style="width:66%; text-align:left;">
+                                <input type="text" style="border:none; width:100%;" id="StartTimeShowInUser" readonly="readonly" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="width:33%; text-align:left;">
+                                <span>End Time</span>
+                            </td>
+                            <td style="width:66%; text-align:left;">
+                                <input type="text" style="border:none; width:100%;" id="EndTimeShowInUser" readonly="readonly" />
+                            </td>
+                        </tr>
+                    </table><br>
+                </form>
+            </div>
+
+            <!--dialog box footer-->
+            <div class="modal-footer">
+                <!--dialog box Close Button-->
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

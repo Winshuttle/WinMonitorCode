@@ -1,0 +1,281 @@
+/*Styles for Master Page*/
+
+/*default for page*/
+body {
+    margin: 0;
+    font-family: "Arial","Franklin Gothic Book","Helvetica Neue",Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #67747c;
+    background-color: #fff;
+}
+    .masterPageTabButton
+    {
+    background:#F8F8F8;
+    height:180px;
+    width:80px;
+    }
+
+    .masterPageFooterTable 
+    {
+    width:100%;    
+    margin-left:auto;   
+    }
+
+    .masterPageFooterTable th, td {
+        padding: 2px;
+        text-align: center;
+    }
+
+
+/*Styles for ActivatePage*/
+    #ActivatePageStyle{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 100px;
+        height: 100px;
+    }
+
+
+/*general style scheme*/
+table{
+        width:100%;    
+        margin-left:auto;
+        text-align:center;
+
+    }
+
+table th, td {
+        padding: 2px;
+        text-align: center;
+    }
+.PageHeadings {
+        text-align:center;
+        color:#0067BB;
+        font-size:xx-large;
+        
+}
+table thead {
+        background-color:#F8F8F8; 
+        font-size:medium;
+        color:black;
+}
+table tbody {
+        font-weight:bolder;
+}
+table > thead > tr > td {
+        font-size:medium;
+        color:black;
+}
+
+.spanForStyleInMaintenance {
+        background-color: #f5f5f5;
+        cursor:pointer;
+}
+
+.spanForStyleInMaintenance:hover {
+        background-color: #e6e6e6;
+}
+
+.spanForStyleInMaintenance:active {
+        background-color: #cccccc;
+}
+
+.clickable {
+    cursor:pointer;
+}
+
+.nopadding {
+        padding: 0 !important;
+        margin: 0 !important;
+}
+
+/*CSS for jquery datatables*/
+.dataTables_length { 
+        font-size:medium;
+        font-weight:500;
+        color:black;
+}
+
+.dataTables_length > label{
+        font-size:medium;
+        font-weight:500;
+        color:black;
+}
+
+.dataTables_filter{ 
+        font-size:medium;
+        font-weight:500;
+        color:black;
+}
+
+.dataTables_filter > label{ 
+        font-size:medium;
+        font-weight:500;
+        color:black;
+}
+
+
+.dataTables_info{ 
+        font-size:medium;
+        font-weight:500;
+        color:black;
+}
+
+.dataTables_info > label{
+        font-size:medium;
+        font-weight:500;
+        color:black;
+}
+
+dataTables_paginate{ 
+        font-size:medium;
+        font-weight:500;
+        color:black;
+}
+
+dataTables_paginate > label{
+        font-size:medium;
+        font-weight:500;
+        color:black;
+}
+
+paginate_button {
+        font-size:medium;
+        font-weight:500;
+        color:black;
+}
+
+paging_simple_numbers { 
+        font-size:medium;
+        font-weight:500;
+        color:black;
+}
+
+/*Delete Components CSS*/
+#componentDeleteButton:hover {
+   color: red;
+   cursor:pointer;
+}
+
+#componentDeleteButton:active {
+   color: blue;
+}
+.questionMarkForIncident:hover {
+   cursor:pointer;
+}
+
+/*styles form User Pages*/
+    /*styles form User Master Page*/
+    #userMasterPageMainDiv .navbar-left >div>#myNavbar>ul>li>a:hover {
+        text-decoration: none;
+        background-color: #0067BB;
+    }
+   #userMasterPageMainDiv  .navbar-left >div>#myNavbar>ul>li>a:active {
+        text-decoration: none;
+        background-color: #0067BB;
+    }
+
+    #userMasterPageMainDiv .navbar-left > div > #myNavbar > ul > li > a {
+        line-height: 1;
+        max-height:inherit;
+        height:inherit;
+        min-height:inherit;
+    }
+    #userMasterPageMainDiv .navbar-left > div > #myNavbar > ul > li {
+        max-height:inherit;
+        height:inherit;
+        min-height:inherit;
+    }
+    #userMasterPageMainDiv  * {
+        box-sizing:content-box;
+    }
+
+    /*styles form Performance Page*/
+    #performanceTableInPerformancePage td {
+        margin:0;
+        padding:0;
+        text-indent: -1px; 
+    }
+
+    .borderClass {
+        border-right: solid 1px #000;
+    }
+
+    #statusTableForWeekHistory > .borderClass {
+        border-right: solid 1px #000;
+    }
+
+    #performanceTableInPerformancePage #divForRecent > table > thead > tr > td {
+        padding-right: 8px;
+    }
+
+    #performanceTableInPerformancePage #divForRecent > table > tbody > tr > td {
+        padding-right: 0px;
+    }
+    #performanceTableInPerformancePage #divForWeekHistory > table > thead > tr > td {
+        padding-right: 8px;
+    }
+
+    #performanceTableInPerformancePage #divForWeekHistory > table > tbody > tr > td {
+        padding-right: 0px;
+    }
+
+    /*styles for Maintenance calendar*/
+        #maintenaneCalenderMainDiv .spanForStyleInMaintenance {
+        background-color: #f5f5f5;
+        cursor: pointer;
+        }
+
+        #maintenaneCalenderMainDiv .spanForStyleInMaintenance:hover {
+            background-color: #e6e6e6;
+        }
+
+        #maintenaneCalenderMainDiv .spanForStyleInMaintenance:active {
+            background-color: #cccccc;
+        }
+
+        #maintenaneCalenderMainDiv table{
+            width:100%;    
+            margin-left:auto;
+            text-align:center;
+        }
+
+        #maintenaneCalenderMainDiv table th, td {
+                padding: 2px;
+                text-align: center;
+            }
+        #maintenaneCalenderMainDiv .PageHeadings {
+                text-align:center;
+                color:#0067BB;
+                font-size:xx-large;
+        
+        }
+        #maintenaneCalenderMainDiv table thead {
+                background-color:#F8F8F8; 
+                font-size:medium;
+                color:black;
+        }
+        #maintenaneCalenderMainDiv table tbody {
+                font-weight:bolder;
+        }
+        #maintenaneCalenderMainDiv table > thead > tr > td {
+                font-size:medium;
+                color:black;
+        }
+
+        #maintenaneCalenderMainDiv table {
+            display: table;
+            white-space: normal;
+            line-height: normal;
+            font-weight: normal;
+            font-size: medium;
+            font-variant: normal;
+            font-style: normal;
+            color: grey;
+            text-align: start;
+            border-color: grey;
+        }

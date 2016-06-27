@@ -1,0 +1,186 @@
+﻿<!-- Defining Tags for Using JQuery-->
+
+<script src="~/Scripts/jquery-1.10.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<script src="~/Scripts/custom.js"></script>
+<script src="~/Scripts/moment.min.js"></script>
+
+<link rel="stylesheet" href="../../css/jquery.dataTables.min.css">
+
+<script type="text/javascript" src="../../Scripts/jquery.dataTables.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        onLoadMasterPage();
+        });
+
+</script>
+
+<!--Bootstrap Value imports-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--For IE compatibility-->
+<meta http-equiv="X-UA-Compatible" content="IE=8;" />
+
+<link rel="stylesheet" href="~/css/bootstrap.min.css"/>
+
+<link rel="stylesheet" href="~/css/bootstrap-theme.min.css"/>
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="~/css/custom.css" />
+
+<link rel="stylesheet" href="../css/jquery.dataTables.min.css">
+
+<script type="text/javascript" src="../Scripts/jquery.dataTables.min.js"></script>
+
+<!--Whole Master page div-->
+<div id="masterPageWholeBody">
+<!-- Screen Header HTML-->
+
+    <!--Upper Top Default Blue Bar-->
+    <div id="StartColorDiv" style="height:20px; width:100%; color:#0067BB; background-color:#0067BB;">
+           Blue Color
+    </div>
+
+
+    <!--Middle Top Default Tag-->
+	<div id="headerDiv" style="align-self:center">
+        <input type="hidden" id="companyIdStoringTextField"/>
+        <table style="width:99%">
+            <tr>
+                <td style="text-align:left;">
+                    <h2>
+				        <span style="color:#0067BB; font-weight:800;">WIN</span><span style="color:black; font-weight:800;">MONITOR</span>
+			        </h2>
+                </td>
+                <td  style="text-align:right;">
+                    <img src="@Url.Content("~/Content/Images/CustomerLogo.png")" style="width:200px; height:40px; margin-right:5px;"/><br />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:left;">
+                    <div>
+                        Welcome, <span id="spanForAccount" style="color:#0067BB"></span>
+                    </div>
+                </td>
+                <td style="text-align:right;">
+                    <div id="companyAccountDiv">
+                        Account: <span id="spanForCompanyAccountName" style="color:#0067BB"></span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:right;">
+                    <button type="button"  class="btn btn-link" id="btnLogout" style="font-weight:500; font-size:18px; height:15px; margin:5px; color: #67747c;" onclick="SignOutFromApplication()">
+						Logout
+					</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+	</div>
+
+
+    <!--Lower Top Default Black Bar-->
+    <div id="EndColorDiv" style="height:25px; width:100%; color:#484848; background-color:#484848;">
+           Black Color
+    </div>
+
+    <!--Screen Body-->
+    <table style="width:100%">
+        <tr>
+            <td style="vertical-align:top;">
+			    <!--master page tab button panel-->
+                <div class="btn-group-vertical" style="width:200px;" id="vertical-button-group">
+				    <button type="button" class="btn btn-link masterPageTabButton" id="btndashboard" onclick="masterPageDashBoardClicked(this)">
+					    <b>Dashboard</b>
+				    </button>
+				    <button type="button" class="btn btn-link masterPageTabButton" id="btncomponents" onclick="masterPageComponentClicked(this)">
+					    <b>Components</b>
+				    </button>
+				    <button type="button" class="btn btn-link masterPageTabButton" id="btnactivate" onclick="masterPageMaintenanceCalendarClicked(this)">
+					    <b>Maintenance Calendar</b>
+				    </button>
+				    <button type="button" class="btn btn-link masterPageTabButton" id="btnregistered" onclick="masterPageRegisteredAdminClicked(this)">
+					    <b>Administrators</b>
+				    </button>
+			    </div>
+            </td>
+            <!--page content placement place-->
+		    <td style="width:100%; height:100%; vertical-align:top;" id="masterPageContentPlace">
+		    </td>
+        </tr>
+    </table>
+
+ <!--to add custom.js functions after body load-->
+<script src="~/Scripts/custom.js"></script>
+    <!--Screen Footer-->
+    <div id="footer" class="row-fluid s4-notdlg">
+	        <div class="container-fluid">
+		        <div id="footer-links">
+			        <ul>
+				        <li style="list-style-type:none; display:inline;"><a href="http://help.winshuttle.com/foundation " target="_blank">Help</a>&nbsp;&nbsp;</li>
+				        <li style="list-style-type:none; display:inline;"><a href="http://www.winshuttle.com/support-training/" target="_blank">Support</a>&nbsp;&nbsp;</li>
+				        <li style="list-style-type:none; display:inline;"><a href="http://www.winshuttle.com/About" target="_blank">About</a>&nbsp;&nbsp;</li>
+                        <li style="list-style-type:none; display:inline;"><a href="http://www.winshuttle.com/Privacy" target="_blank">Privacy</a>&nbsp;&nbsp;</li>
+                        <li style="list-style-type:none; display:inline;"><a href="http://www.winshuttle.com/EULA" target="_blank">EULA</a>&nbsp;&nbsp;</li>
+                        <li style="list-style-type:none; display:inline; float:right">© 2008-2016 Winshuttle, LLC</li>
+				    </ul>
+	        </div>
+        </div>
+    </div>
+
+    </div>
+    <input type="hidden" id="adminNameHiddenField"/>
+
+<!--Select Company Warning Modal-->
+    <div class = "modal fade" id = "warningModal" tabindex = "-1" role = "dialog" aria-labelledby = "warningModalLabel" aria-hidden = "true" >
+                <div class = "modal-dialog">
+                    <div class = "modal-content">
+
+                        <!--dialog box header-->
+                        <div class = "modal-header">
+
+                            <!--dialog box label-->
+                            <h4 class = "modal-title" id = "warningModalLabel" style="color:red;text-align:center;">
+                                 <b>Warning</b>
+                             </h4>
+                     </div>
+
+                <!--dialog box body-->
+                <div class = "modal-body" style="text-align:center;">
+                     <span style='color:red;font:message-box;width:100%'>
+                        Select Company First
+                     </span>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+<!--Unauthorized access Warning Modal-->
+<div class="modal fade" id="warningForUnauthorizedAccessModal" tabindex="-1" role="dialog" aria-labelledby="warningForUnauthorizedAccessModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!--dialog box header-->
+            <div class="modal-header">
+
+                <!--dialog box label-->
+                <h4 class="modal-title" id="warningForUnauthorizedAccessModalLabel" style="color:red;text-align:center;">
+                    <b>Warning</b>
+                </h4>
+            </div>
+
+            <!--dialog box body-->
+            <div class="modal-body" style="text-align:center;">
+                <span style='font:message-box; width:100%'>
+                    You Are Not Authorized User
+                </span><br>
+                <a href="../Account/SignOut">Sign in as different User</a>
+            </div>
+        </div>
+    </div>
+</div>

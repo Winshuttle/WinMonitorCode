@@ -1,0 +1,267 @@
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\WinMonitorApp.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\WinMonitorApp.pdb
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\Newtonsoft.Json.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Net.Http.Formatting.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.Helpers.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.Http.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.Http.WebHost.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.Mvc.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.Razor.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.WebPages.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\Newtonsoft.Json.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Net.Http.Formatting.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.Helpers.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.Http.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.Http.WebHost.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.Mvc.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.Razor.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.WebPages.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\obj\Release\WinMonitorApp.csprojResolveAssemblyReference.cache
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\obj\Release\WinMonitorApp.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - Demonstration Copy\WinMonitorApp\obj\Release\WinMonitorApp.pdb
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\WinMonitorApp.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\WinMonitorApp.pdb
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\WinMonitorApp.dll.CodeAnalysisLog.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\WinMonitorApp.dll.lastcodeanalysissucceeded
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\Newtonsoft.Json.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Net.Http.Formatting.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.Helpers.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.Http.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.Http.WebHost.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.Mvc.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.Razor.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.WebPages.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\Newtonsoft.Json.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Net.Http.Formatting.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.Helpers.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.Http.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.Http.WebHost.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.Mvc.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.Razor.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.WebPages.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\obj\Release\WinMonitorApp.csprojResolveAssemblyReference.cache
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\obj\Release\WinMonitorApp.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 27-05-2016\WinMonitorApp\obj\Release\WinMonitorApp.pdb
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\WinMonitorApp.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\WinMonitorApp.pdb
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\WinMonitorApp.dll.CodeAnalysisLog.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\WinMonitorApp.dll.lastcodeanalysissucceeded
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\Newtonsoft.Json.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Net.Http.Formatting.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.Helpers.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.Http.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.Http.WebHost.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.Mvc.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.Razor.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.WebPages.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\Newtonsoft.Json.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Net.Http.Formatting.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.Helpers.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.Http.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.Http.WebHost.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.Mvc.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.Razor.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.WebPages.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\obj\Release\WinMonitorApp.csprojResolveAssemblyReference.cache
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\obj\Release\WinMonitorApp.dll
+C:\Users\gkaur\Desktop\WinMonitorApp - 1-06-2016-1\WinMonitorApp\obj\Release\WinMonitorApp.pdb
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\WinMonitorApp.dll.config
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\WinMonitorApp.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\WinMonitorApp.pdb
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Azure.ActiveDirectory.GraphClient.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Data.Edm.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Data.OData.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Data.Services.Client.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Security.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Newtonsoft.Json.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Owin.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Net.Http.Formatting.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Spatial.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.Helpers.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.Http.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.Http.WebHost.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.Mvc.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.Razor.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.WebPages.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Data.Edm.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Data.OData.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Data.Services.Client.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Security.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Spatial.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\Newtonsoft.Json.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Net.Http.Formatting.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.Helpers.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.Http.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.Http.WebHost.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.Mvc.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.Razor.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.WebPages.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\de\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\es\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\fr\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\it\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\ja\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\ko\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\ru\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\obj\Release\WinMonitorApp.csprojResolveAssemblyReference.cache
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\obj\Release\WinMonitorApp.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 1-06-2016-2\WinMonitorApp\obj\Release\WinMonitorApp.pdb
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\WinMonitorApp.dll.config
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\WinMonitorApp.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\WinMonitorApp.pdb
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Azure.ActiveDirectory.GraphClient.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Data.Edm.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Data.OData.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Data.Services.Client.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Security.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Newtonsoft.Json.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Owin.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Net.Http.Formatting.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Spatial.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.Helpers.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.Http.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.Http.WebHost.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.Mvc.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.Razor.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.WebPages.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Data.Edm.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Data.OData.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Data.Services.Client.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Security.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Spatial.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\Newtonsoft.Json.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Net.Http.Formatting.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.Helpers.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.Http.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.Http.WebHost.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.Mvc.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.Razor.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.WebPages.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\de\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\es\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\fr\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\it\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\ja\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\ko\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\ru\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\obj\Release\WinMonitorApp.csprojResolveAssemblyReference.cache
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\obj\Release\WinMonitorApp.dll
+C:\Users\centraluser\Desktop\WinMonitorApp - 17-06-2016-2\WinMonitorApp\obj\Release\WinMonitorApp.pdb

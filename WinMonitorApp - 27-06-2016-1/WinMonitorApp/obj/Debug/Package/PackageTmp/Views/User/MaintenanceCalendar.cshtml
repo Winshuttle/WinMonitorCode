@@ -1,0 +1,71 @@
+﻿<!--Bootstrap Value imports-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="~/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="~/css/bootstrap-theme.min.css"/>
+
+<link rel="stylesheet" href="~/css/CustomCalendar.css"/>
+
+<link rel="stylesheet" href="~/css/custom.css" />
+
+<script src="~/Scripts/jquery-1.12.3.min.js"></script>
+
+<script src="~/Scripts/moment.min.js"></script>
+
+<link rel="stylesheet" href="../../css/jquery.dataTables.min.css">
+
+<script type="text/javascript" src="../../Scripts/jquery.dataTables.min.js"></script>
+
+<script src="~/Scripts/customUser.js"></script>
+
+<script>
+    $(document).ready(function () {
+        InactivateEvents();
+        showCalenderViewOfMaintenance();
+    });
+</script>
+
+<div id="maintenaneCalenderMainDiv">
+    <table style="width:100%">
+        <tr>
+            <td align="left">
+                <span style="font-size:x-large; font-weight:500;"><h3>Maintenance Calendar</h3></span>
+            </td>
+            <td align="left">
+                <img src="/Content/Images/barCalendar.jpg" alt="Color Scheme"/>
+            </td>
+            <td align="center">
+                <span class="spanForStyleInMaintenance clickable" onclick="showCalenderViewOfMaintenance()" id="calenderViewSelect">Calender</span>
+                <span class="spanForStyleInMaintenance clickable" onclick="showListViewOfMaintenance()" id="listViewSelect">List</span>
+            </td>
+        </tr>
+    </table><hr />
+
+    <div class="container">
+        <div id="calendar"></div>
+        <div id="listView">
+            <table id="listViewTable" style="width:100%">
+                <thead>
+                    <tr>
+                        <td>
+                            Event Title
+                        </td>
+                        <td>
+                            Event Details
+                        </td>
+                        <td>
+                            Event Start
+                        </td>
+                        <td>
+                            Event End
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="listViewBody"></tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <input type="hidden" id="HiddenEventId"/>
+      
+</div>

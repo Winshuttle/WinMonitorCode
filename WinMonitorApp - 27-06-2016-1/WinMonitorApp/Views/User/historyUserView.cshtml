@@ -1,0 +1,67 @@
+﻿@using WinMonitorApp.Models
+
+<!-- Defining Tags for Using JQuery-->
+
+<script src="~/Scripts/jquery-1.10.1.min.js"></script>
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+
+<!--Bootstrap Value imports-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--For IE compatibility-->
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
+<link rel="stylesheet" href="~/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/bootstrap-theme.min.css" />
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+<script src="~/Scripts/customUser.js"></script>
+
+<link rel="stylesheet" href="~/css/custom.css" />
+
+<link rel="stylesheet" href="../../css/jquery.dataTables.min.css">
+
+<script type="text/javascript" src="../../Scripts/jquery.dataTables.min.js"></script>
+
+<script src="~/Scripts/moment.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        historyReadyFunction();
+    });
+</script>
+
+<div id="HistoryBody" style="margin:15px;">
+    <h3>
+    <span style="font-size:x-large; font-weight:500; float:left; margin-left:10px;">Log History</span>
+    </h3>
+    <br /><hr><br />
+    <div>
+        <table id="HistoryTable"  class=" table table-hover ">
+            <thead>
+                <tr>
+                    <td>
+                        Component
+                    </td>
+                    <td>
+                        Incident
+                    </td>
+                    <td>
+                        IncidentDetails
+                    </td>
+                    <td>
+                       Timestamp
+                    </td>
+                </tr>
+            </thead>
+            <tbody >
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
